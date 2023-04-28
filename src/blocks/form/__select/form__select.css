@@ -1,0 +1,15 @@
+.form__select {
+    width: 512px;
+    height: 56px;
+    border: 1px solid #383838;
+    border-radius: 16px;
+    appearance: none;
+    padding: 26px 0 0 16px;
+    font-family: 'Onest', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #383838;
+    margin: 0 0 128px;
+}

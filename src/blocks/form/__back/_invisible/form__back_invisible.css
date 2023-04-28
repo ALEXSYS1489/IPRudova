@@ -1,0 +1,4 @@
+.form__back_invisible {
+    opacity: 0;
+    pointer-events: none;
+}

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Onest';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: auto;
+  src: url("OnestMedium1602-hint.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Onest';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("OnestRegular1602-hint.woff") format("woff");
+}

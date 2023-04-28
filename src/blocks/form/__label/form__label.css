@@ -1,0 +1,17 @@
+.form__label {
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 16px;
+    width: 220px;
+    height: 20px;
+    background: #F5F5F5;
+    border-radius: 16px;
+    font-family: 'Onest', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #383838;
+    }

@@ -1,0 +1,4 @@
+.form__question-container {
+    display: flex;
+    justify-content: space-between;
+}

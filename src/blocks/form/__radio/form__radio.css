@@ -1,0 +1,14 @@
+.form__radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);
+}
+
+.form__radio:checked +.form__radio-visible {
+    background: #FFFFFF;
+    border: 6px solid #383838;
+    width: 8px;
+    height: 8px;
+}

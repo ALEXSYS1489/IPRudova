@@ -1,0 +1,6 @@
+.form__container {
+    width: 512px;
+    position: absolute;
+    left: 576px;
+    transition: all 0.4s linear;
+}

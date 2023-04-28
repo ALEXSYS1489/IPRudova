@@ -1,0 +1,7 @@
+.form__inputs {
+    display: grid;
+    margin: 24px 0 0;
+    gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}

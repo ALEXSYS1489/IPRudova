@@ -1,0 +1,23 @@
+.form__input {
+    width: 480px;
+    height: 20px;
+    padding: 18px 16px;
+    background: #F5F5F5;
+    border-radius: 16px;
+    border: none;
+    font-family: 'Onest', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #383838;
+}
+
+.form__input::placeholder {
+    font-family: 'Onest', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #9B9B9B;
+}

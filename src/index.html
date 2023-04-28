@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPRudova</title>
+</head>
+
+<body>
+  <main class="quiz">
+    <div class="quiz__title-container">
+      <h1 class="quiz__title">Подберём вуз мечты</h1>
+      <h2 class="quiz__subtitle">Ответьте на 8 простых вопросов, и мы составим список наболее подходящих для вас вузов</h2>
+      <img src="<%=require('./images/Group 1593.svg')%>" alt="бесплатно за 30 секунд" class="quiz__image">
+    </div>
+
+    <form class="form" name="form">
+      
+      <div class="form__container">
+
+        <div class="form__question-container">
+          <p class="form__question">Для кого вы ищете учебное заведение?</p>
+          <p class="form__step">Шаг 1/9</p>
+        </div>
+
+        <div class="form__inputs">
+
+          <label class="form__label">
+            <input type="radio" name="forWhom" value="myself" id="myself" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Себе
+          </label>
+
+          <label class="form__label">
+            <input type="radio" name="forWhom" value="spouse" id="spouse" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Супругу/супруге
+          </label>
+
+          <label class="form__label">
+            <input type="radio" name="forWhom" value="relative" id="relative" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Родственнику
+          </label>
+
+          <label class="form__label">
+            <input type="radio" name="forWhom" value="colleague" id="colleague" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Коллеге
+          </label>
+
+          <label class="form__label">
+            <input type="radio" name="forWhom" value="child" id="child" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Ребенку
+          </label>
+
+          <label class="form__label">
+            <input type="radio" name="forWhom" value="other" id="other" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Другое  
+          </label>
+        </div>
+
+        <div class="form__buttons">
+
+          <button class="form__back form__back_invisible" type="button">
+            <img src="<%=require('./images/back.svg')%>" alt="Назад" class="form__back-arrow">
+            Назад        
+          </button>
+  
+          <button class="form__next" type="button">
+            Далее
+            <img src="<%=require('./images/next.svg')%>" alt="Далее" class="form__next-arrow">
+          </button>
+  
+        </div>
+
+      </div>
+
+      <div class="form__container">
+
+        <div class="form__question-container">
+          <p class="form__question">В каком городе планируете поступать?</p>
+          <p class="form__step">Шаг 2/9</p>
+        </div>
+
+        <div class="form__inputs">
+          <label class="form__select-label" for="city">Город</label>
+          <img src="<%=require('./images/Arrow.svg')%>" alt="Стрелка" class="form__select-arrow">
+          <select class="form__select" name="city" id="city">
+            <option value="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="Новосибирск">Новосибирск</option>
+            <option value="Москва">Москва</option>
+            <option value="Нижний новгород">Нижний новгород</option>
+            <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+            <option value="Екатеринбург">Екатеринбург</option>
+          </select>    
+        </div>
+
+        <div class="form__buttons">
+
+          <button class="form__back" type="button">
+            <img src="<%=require('./images/back.svg')%>" alt="Назад" class="form__back-arrow">
+            Назад        
+          </button>
+  
+          <button class="form__next form__next_active" type="button">
+            Далее
+            <img src="<%=require('./images/next.svg')%>" alt="Далее" class="form__next-arrow">
+          </button>
+  
+        </div>
+
+      </div>
+
+      <div class="form__container">
+
+        <div class="form__question-container">
+          <p class="form__question">Какое образование уже есть?</p>
+          <p class="form__step">Шаг 3/9</p>
+        </div>
+
+        <div class="form__inputs">
+
+          <label class="form__label">
+            <input type="radio" name="education" value="9classes" id="9classes" class="form__radio">
+            <span class="form__radio-visible"></span>
+            9 классов
+          </label>
+
+          <label class="form__label">
+            <input type="radio" name="education" value="college" id="college" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Колледж/техникум
+          </label>
+
+          <label class="form__label">
+            <input type="radio" name="education" value="11classes" id="11classes" class="form__radio">
+            <span class="form__radio-visible"></span>
+            11 классов
+          </label>
+
+          <label class="form__label">
+            <input type="radio" name="education" value="10classes" id="10classes" class="form__radio">
+            <span class="form__radio-visible"></span>
+            10 классов
+          </label>
+
+          <label class="form__label">
+            <input type="radio" name="education" value="college2" id="college2" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Училище
+          </label>
+
+          <label class="form__label">
+            <input type="radio" name="education" value="Unfinished-higher-education" id="Unfinished-higher-education" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Неоконченное высшее  
+          </label>
+        </div>
+
+        <div class="form__buttons">
+
+          <button class="form__back" type="button">
+            <img src="<%=require('./images/back.svg')%>" alt="Назад" class="form__back-arrow">
+            Назад        
+          </button>
+  
+          <button class="form__next" type="button">
+            Далее
+            <img src="<%=require('./images/next.svg')%>" alt="Далее" class="form__next-arrow">
+          </button>
+  
+        </div>
+
+      </div>
+
+      <div class="form__container">
+
+        <div class="form__question-container">
+          <p class="form__question">Куда планируете поступать?</p>
+          <p class="form__step">Шаг 4/9</p>
+        </div>
+
+        <div class="form__inputs form__inputs_column">
+
+          <label class="form__label form__label_column">
+            <input type="radio" name="planning-to-enroll" value="University" id="University" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Вуз
+          </label>
+
+          <label class="form__label form__label_column">
+            <input type="radio" name="planning-to-enroll" value="College/technical-school" id="College/technical-school" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Колледж/техникум
+          </label>
+
+          <label class="form__label form__label_column">
+            <input type="radio" name="planning-to-enroll" value="college2" id="college2" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Училище
+          </label>
+
+        </div>
+
+        <div class="form__buttons">
+
+          <button class="form__back" type="button">
+            <img src="<%=require('./images/back.svg')%>" alt="Назад" class="form__back-arrow">
+            Назад        
+          </button>
+  
+          <button class="form__next" type="button">
+            Далее
+            <img src="<%=require('./images/next.svg')%>" alt="Далее" class="form__next-arrow">
+          </button>
+  
+        </div>
+
+      </div>
+
+      <div class="form__container">
+
+        <div class="form__question-container">
+          <p class="form__question">Какую форму обучения предпочитаете?</p>
+          <p class="form__step">Шаг 5/9</p>
+        </div>
+
+        <div class="form__inputs form__inputs_column">
+
+          <label class="form__label form__label_column">
+            <input type="radio" name="form-of-training" value="Full-time" id="Full-time" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Очную
+          </label>
+
+          <label class="form__label form__label_column">
+            <input type="radio" name="form-of-training" value="Correspondence" id="Correspondence" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Заочную
+          </label>
+
+          <label class="form__label form__label_column">
+            <input type="radio" name="form-of-training" value="Remote" id="Remote" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Дистанционную
+          </label>
+
+        </div>
+
+        <div class="form__buttons">
+
+          <button class="form__back" type="button">
+            <img src="<%=require('./images/back.svg')%>" alt="Назад" class="form__back-arrow">
+            Назад        
+          </button>
+  
+          <button class="form__next" type="button">
+            Далее
+            <img src="<%=require('./images/next.svg')%>" alt="Далее" class="form__next-arrow">
+          </button>
+  
+        </div>
+
+      </div>
+
+      <div class="form__container">
+
+        <div class="form__question-container">
+          <p class="form__question">Какую форму обучения предпочитаете?</p>
+          <p class="form__step">Шаг 6/9</p>
+        </div>
+
+        <div class="form__inputs form__inputs_column">
+
+          <label class="form__label form__label_column">
+            <input type="radio" name="paid-tuition" value="budget" id="budget" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Нет, только бюджет
+          </label>
+
+          <label class="form__label form__label_column">
+            <input type="radio" name="paid-tuition" value="paid" id="paid" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Да, планирую учиться платно
+          </label>
+
+          <label class="form__label form__label_column">
+            <input type="radio" name="paid-tuition" value="both-options" id="both-options" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Возможны оба варианта
+          </label>
+
+        </div>
+
+        <div class="form__buttons">
+
+          <button class="form__back" type="button">
+            <img src="<%=require('./images/back.svg')%>" alt="Назад" class="form__back-arrow">
+            Назад        
+          </button>
+  
+          <button class="form__next" type="button">
+            Далее
+            <img src="<%=require('./images/next.svg')%>" alt="Далее" class="form__next-arrow">
+          </button>
+  
+        </div>
+
+      </div>
+
+      <div class="form__container">
+
+        <div class="form__question-container">
+          <p class="form__question">Какая специальность интересует?</p>
+          <p class="form__step">Шаг 7/9</p>
+        </div>
+
+        <div class="form__inputs">
+          <label class="form__select-label" for="city">Город</label>
+          <img src="<%=require('./images/Arrow.svg')%>" alt="Стрелка" class="form__select-arrow">
+          <select class="form__select" name="specialization" id="specialization">
+            <option value="Любая">Любая</option>
+            <option value="Философия">Философия</option>
+            <option value="Социология">Социология</option>
+            <option value="Юриспруденция">Юриспруденция</option>
+            <option value="Менеджмент">Менеджмент</option>
+            <option value="Экономика">Экономика</option>
+          </select>    
+        </div>
+
+        <div class="form__buttons">
+
+          <button class="form__back" type="button">
+            <img src="<%=require('./images/back.svg')%>" alt="Назад" class="form__back-arrow">
+            Назад        
+          </button>
+  
+          <button class="form__next form__next_active" type="button">
+            Далее
+            <img src="<%=require('./images/next.svg')%>" alt="Далее" class="form__next-arrow">
+          </button>
+  
+        </div>
+
+      </div>
+
+      <div class="form__container">
+
+        <div class="form__question-container">
+          <p class="form__question">Как скоро планируете поступать?</p>
+          <p class="form__step">Шаг 8/9</p>
+        </div>
+
+        <div class="form__inputs">
+
+          <label class="form__label">
+            <input type="radio" name="plan-to-enroll" value="As-soon-as-possible" id="As-soon-as-possible" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Как можно быстрее
+          </label>
+
+          <label class="form__label">
+            <input type="radio" name="plan-to-enroll" value="Month" id="Month" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Месяц
+          </label>
+
+          <label class="form__label">
+            <input type="radio" name="plan-to-enroll" value="Quarter" id="Quarter" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Квартал
+          </label>
+
+          <label class="form__label">
+            <input type="radio" name="plan-to-enroll" value="Six-months" id="Six-months" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Полгода
+          </label>
+
+          <label class="form__label">
+            <input type="radio" name="plan-to-enroll" value="Year" id="Year" class="form__radio">
+            <span class="form__radio-visible"></span>
+            Год
+          </label>
+        </div>
+
+        <div class="form__buttons">
+
+          <button class="form__back" type="button">
+            <img src="<%=require('./images/back.svg')%>" alt="Назад" class="form__back-arrow">
+            Назад        
+          </button>
+  
+          <button class="form__next" type="button">
+            Далее
+            <img src="<%=require('./images/next.svg')%>" alt="Далее" class="form__next-arrow">
+          </button>
+  
+        </div>
+
+      </div>
+
+      <div class="form__container">
+
+        <div class="form__question-container">
+          <p class="form__question">Ваша подборка готова! 🥳 Куда нам отправить её?</p>
+          <p class="form__step">Шаг 9/9</p>
+        </div>
+
+        <div class="form__inputs form__inputs_column">
+
+          <input type="text" name="name" id="name" class="form__input" placeholder="Как вас зовут?" required>
+          <input type="tel" name="tel" id="tel" class="form__input" placeholder="Номер телефона" required>
+          <input type="email" name="email" id="email" class="form__input" placeholder="E-mail" required>
+          <button type="submit" class="form__submit">Получить подборку</button>
+          <p class="form__text">Нажимая на кнопку, вы даете согласие на обработку своих <span class="form__span">Персональных данных</span></p>
+
+        </div>
+        
+      </div>
+    </form>
+
+    <div class="popup">
+      <div class="popup__container">
+        <img src="<%=require('./images/Icon.jpg')%>" alt="Успешно" class="popup__image">
+        <h1 class="popup__title">Отлично, спасибо!</h1>
+        <p class="popup__text">Мы отправили подборку вам на почту. 
+          Если подборка не приходит — проверьте спам, возможно, она попала туда.</p>
+      </div>
+
+      <div class="popup__loading-container">
+        <h1 class="popup__loading">Загрузка...</h1>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>

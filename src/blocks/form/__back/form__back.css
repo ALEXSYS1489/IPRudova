@@ -1,0 +1,17 @@
+.form__back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid #D8D8D8;
+    border-radius: 12px;
+    width: 108px;
+    height: 44px;
+    font-family: 'Onest', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #383838;
+    background: #FFFFFF;
+}
